@@ -1,0 +1,52 @@
+libraries:
+(1) pandas
+(2) numpy
+(3) seaborn
+(4) matplot
+(5) Folium
+(6) re
+(7) Sklearn
+
+Steps :
+(1) Target Definition 
+(2) Feature Extraction 
+(3) Encoding 
+(4) Training a Model 
+(5) Predictions 
+(6) Accuracy
+
+EDA perform :
+(1) Restaurants Overview 
+(2) Restaurants Services 
+(3) Where Are the Good Ones? 
+(4) Zomato Customers Preferences 
+(5) Food Options
+
+                    Data Description 
+   varibales                   definition
+url:                              contains the url of the restaurant in the zomato website;
+address:                          contains the address of the restaurant in Bengaluru;
+name:                             contains the name of the restaurant;
+online-order:                     whether online ordering is available in the restaurant or not;
+book-table:                       table book option available or not;
+rate:                             contains the overall rating of the restaurant out of 5;
+votes:                            contains total number of rating for the restaurant as of the above mentioned date;
+phone:                            contains the phone number of the restaurant;
+location:                         contains the neighborhood in which the restaurant is located;
+rest-type:                        restaurant type.
+
+
+# Feature Extraction: Feature extraction is a process that identifies important features or attributes of the data.
+
+# Encoding : Encoding refers to converting the labels into numeric form so as to convert it into the machine-readable form.like label encoding and one hot encoding.
+
+# Accuracy : Accuracy is defined as the percentage of correct predictions for the test data. It can be represent with confusion matrix.
+
+# prediction : use LogisticRegression,Naive Bayes,RandomForest,Decision Tree,KNN model .
+
+# LogisticRegression :classification algorithm that is used to predict the probability of a categorical dependent variable.
+# Naive Bayes : Naive Bayes is a classification algorithm for binary (two-class) and multiclass classification problems.
+# RandomForest : A random forest is a supervised machine learning algorithm that is constructed from decision tree algorithms.
+# Decision Tree : A decision tree is a very specific type of probability tree that enables you to make a decision about some kind of process.
+# K-Nearest Neighbors (KNN) is one of the simplest algorithms used in Machine Learning for regression and classification problem. KNN algorithms use data and classify new data points based on similarity measures
+                    
