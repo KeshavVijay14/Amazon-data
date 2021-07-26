@@ -9,6 +9,8 @@ libraries:
 (8) pyplot
 (9) geopy
 
+TO install ant libray use command  pip install library_name on prompt or simply use !pip install library_name in jupyter notebook
+
 Steps :
 (1) Target Definition 
 (2) Feature Extraction 
