@@ -1,0 +1,82 @@
+Employee promotion predictor is a Prediction based ML model which is used to predict the promotion of a employee.
+
+
+Importing all the Required Libraries( All the libraries are installed on anaconda prompt)
+Import Numpy, Pandas, Matplot, and Seaborn for Data Analysis and Visualizations
+Import Sklearn, Imblearn for Machine Learning Modelling
+
+TO install ant libray use command  pip install library_name on prompt or simply use !pip install library_name in jupyter notebook
+
+
+Dataset folder contain test and train data file which are in csv form.
+.html file contain all the code in form of html
+
+
+
+                                    Data Description(columns)
+Variable	                                                                         Definition
+employee_id	                                                                  Unique ID for employee	
+department	                                                                  Department of employee
+region	                                                                      Region of employment (unordered)
+education	                                                                    Education Level
+gender	                                                                      Gender of Employee
+recruitment_channel	                                                          Channel of recruitment for employee
+no_of_trainings	                                                              no of other trainings completed in previous year on soft skills, technical skills etc.
+age	                                                                          Age of Employee
+previous_year_rating	                                                        Employee Rating for the previous year
+length_of_service	                                                            Length of service in years
+KPIs_met >80%	                                                                if Percent of KPIs(Key performance Indicators) >80% then 1 else 0
+awards_won?	                                                                  if awards won during previous year then 1 else 0
+avg_training_score                                              	            Average score in current training evaluations
+is_promoted (Target)	                                                        Recommended for promotion
+
+
+
+## Challanges and their suitable solutions :->
+
+# Descriptive Statistics
+(1) for Numerical Columns we check for stats such as Max, Min, Mean, count, standard deviation, 25 percentile, 50 percentile, and 75 percentile.
+(2) for Categorical Columns we check for stats such as count, frequency, top, and unique elements.
+
+# Treatment of Missing Values
+use Mean, when we do not have Outliers in the dataset for the Numerical Variables.
+use Median, when we have outliers in the dataset for the Numerical Variables.
+use Mode, When we have Categorical Variables.
+
+# outlier detection
+An outlier is an object that deviates significantly from the rest of the objects. They can be caused by measurement or execution error.
+The presence of outliers in a classification or regression dataset can result in a poor fit and lower predictive modeling performance. 
+Instead, automatic outlier detection methods can be used in the modeling pipeline and compared, just like other data preparation transforms that may be applied to the dataset.
+
+# statistical and quantitative analysis :
+(1) Univariate analysis is simplest form of statistical analysis method.The key fact is that only one variable is involved
+(2) Bivariate analysis is one of the simplest forms of quantitative analysis. 
+    It involves the analysis of two variables, for the purpose of determining the empirical relationship between them. Bivariate analysis can be helpful in testing simple hypotheses of association.
+(3) Multivariate analysis is based on the principles of multivariate statistics, which involves observation and analysis of more than one statistical outcome variable at a time
+
+
+# feature engineering :Feature engineering is the process of using domain knowledge to extract features from raw data via data mining techniques
+
+# Dealing with Categorical Columns : 
+  There are various ways to encode categorical columns into Numerical columns
+  This is an Essential Step, as we Machine Learning Models only works with Numerical Values.
+  Here, we are going to use Business Logic to encode the education column
+  Then we will use the Label Encoder, to Department and Gender Columns
+
+# Splitting the Data¶
+This is one of the most Important step to perform Machine Learning Prediction on a Dataset, We have to separate the Target and Independent Columns.
+store the Target Variable in y, and then  store the rest of the columns in x, by deleting the target column from the data
+Also, changing the name of test dataset to x_test for ease of understanding.
+
+# Resampling
+Resampling is the method that consists of drawing repeated samples from the original data samples. The method of Resampling is a nonparametric method of statistical inference
+
+# Feature Scaling
+Feature scaling is a method used to normalize the range of independent variables or features of data
+
+# ML model :
+Decision Tree Classifier
+A decision tree is a decision support tool that uses a tree-like model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility. 
+It is one way to display an algorithm that only contains conditional control statements.
+
+# A confusion matrix is a table that is often used to describe the performance of a classification model (or "classifier") on a set of test data for which the true values are known.
